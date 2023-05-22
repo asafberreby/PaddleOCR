@@ -92,7 +92,7 @@ def init_args():
     parser.add_argument(
         "--rec_char_dict_path",
         type=str,
-        default="./ppocr/utils/ppocr_keys_v1.txt")
+        default="./ppocr/utils/EN_symbol_dict.txt")
     parser.add_argument("--use_space_char", type=str2bool, default=True)
     parser.add_argument(
         "--vis_font_path", type=str, default="./doc/fonts/simfang.ttf")
@@ -107,7 +107,7 @@ def init_args():
     # PGNet parmas
     parser.add_argument("--e2e_pgnet_score_thresh", type=float, default=0.5)
     parser.add_argument(
-        "--e2e_char_dict_path", type=str, default="./ppocr/utils/ic15_dict.txt")
+        "--e2e_char_dict_path", type=str, default="./ppocr/utils/EN_symbol_dict.txt")
     parser.add_argument("--e2e_pgnet_valid_set", type=str, default='totaltext')
     parser.add_argument("--e2e_pgnet_mode", type=str, default='fast')
 
